@@ -25,10 +25,10 @@ cd home
 npm install
 ```
 
-### `blog` mfe
+### `feed` mfe
 
 ```bash
-cd blog
+cd feed
 npm install
 ```
 
@@ -41,7 +41,7 @@ In different terminals:
 npm run dev
 ```
 
-### Running `blog` mfe
+### Running `feed` mfe
 
 ```bash
 npm run dev
