@@ -21,11 +21,31 @@ const App = () => {
       <h1>Consumer</h1>
       <Button />
 
-      <ol>
+      <section>
         {list.map((item: any, index) => {
-          return (<li key={`${item?.id}-${index}`}>{item?.source.name}</li>)
+          return (
+            <article key={`${item?.id}-${index}`}>
+              <header>
+                <img style={{ maxWidth: '100%'}} src={item?.urlToImage} alt={item?.title} />
+                <h2>
+                  {item?.title}
+                </h2>
+                <p>
+                  <span>{item?.author}</span> | <span>{item?.source.name}</span>
+                </p>
+                <span>{new Date(item?.publishedAt).toLocaleDateString('pt-br')}</span>
+                <p>{item?.description}</p>
+                <p>{item?.content.replace(/\[[0-9+\schars]*]$/gi, '')}
+                  [<a href={item?.url} target='_blank' rel='noopener noreferrer'>
+                  leia a materia completa
+                  </a>]
+                </p>
+                
+              </header>
+            </article>
+          )
         })}
-      </ol>
+      </section>
   
 
     </div>
