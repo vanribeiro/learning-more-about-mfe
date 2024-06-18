@@ -1,6 +1,8 @@
-import { defineConfig } from '@rsbuild/core';
+import { defineConfig, loadEnv } from '@rsbuild/core';
 import { pluginReact } from '@rsbuild/plugin-react';
 import { ModuleFederationPlugin } from '@module-federation/enhanced/rspack';
+
+const { publicVars } = loadEnv({ prefixes: ['REACT_APP_'] });
 
 export default defineConfig({
   server: {
@@ -18,6 +20,9 @@ export default defineConfig({
         }),
       ]);
     },
+  },
+  source: {
+    define: publicVars,
   },
   plugins: [pluginReact()],
 });
