@@ -1,6 +1,6 @@
 import { defineConfig, loadEnv } from '@rsbuild/core';
 import { pluginReact } from '@rsbuild/plugin-react';
-import { ModuleFederationPlugin } from '@module-federation/enhanced/rspack';
+import { ModuleFederationPlugin } from '@module-federation/enhanced';
 
 const { publicVars } = loadEnv({ prefixes: ['REACT_APP_'] });
 

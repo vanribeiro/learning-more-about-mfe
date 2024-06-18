@@ -14,5 +14,12 @@
       "*": ["./@mf-types/*"]
     }
   },
-  "include": ["src"]
+  "include": [
+      "src/**/*", 
+      "jest-setup.ts",
+      "**/*.test.ts"
+    ],
+    "exclude": [
+        "**/*.spec.ts"
+    ]
 }
