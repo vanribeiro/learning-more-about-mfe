@@ -10,9 +10,9 @@ export default defineConfig({
     rspack: (config, { appendPlugins }) => {
       appendPlugins([
         new ModuleFederationPlugin({
-          name: 'consumer',
+          name: 'home',
           remotes: {
-            provider: 'provider@http://localhost:3000/mf-manifest.json',
+            home: 'home@http://localhost:3000/mf-manifest.json',
           },
           shared: ['react', 'react-dom']
         }),

@@ -13,10 +13,10 @@ export default defineConfig({
   },
   tools: {
     rspack: ( config, { appendPlugins  }) => {
-      config.output!.uniqueName = 'provider';
+      config.output!.uniqueName = 'home';
       appendPlugins ([
         new ModuleFederationPlugin({
-          name: 'provider',
+          name: 'home',
           exposes: {
             './button': './src/components/Button/index.tsx'
           },
