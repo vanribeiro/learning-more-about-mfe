@@ -8,16 +8,43 @@
 5. [License](#license)
 
 ## About
-*to do*
+Technical testing on MFE, Unit Testing and E2E.
 
 ## Requirement
-*to do*
+- Node >= v20.14.0 
 
 ## Install
-*to do*
+
+In different terminals:
+
+### `home` mfe
+
+```bash
+cd home
+npm install
+```
+
+### `blog` mfe
+
+```bash
+cd blog
+npm install
+```
 
 ## Usage
-*to do*
+In different terminals:
+
+### Running `home` mfe
+
+```bash
+npm run dev
+```
+
+### Running `blog` mfe
+
+```bash
+npm run dev
+```
 
 ## License
 
