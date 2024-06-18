@@ -8,10 +8,11 @@
 5. [License](#license)
 
 ## About
-Technical testing on MFE, Unit Testing and E2E.
+MFE, Unit Testing and E2E.
 
 ## Requirement
 - Node >= v20.14.0 
+- Your Own [News API Key](https://newsapi.org/)
 
 ## Install
 
@@ -45,6 +46,13 @@ npm run dev
 ```bash
 npm run dev
 ```
+
+### Running API
+
+This project uses the [News API](https://newsapi.org/) and it needs an api Key. So follow the bellow steps:
+1. Go to this [link](https://newsapi.org/), create an account and get a free apy key.
+2. In the root of MFE folder, rename the `$.env` file to `.env`.
+3. Inside `.env` set the apy key to `NEWS_APY_KEY` constant and save the file.
 
 ## License
 

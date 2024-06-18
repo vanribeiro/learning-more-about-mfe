@@ -1,9 +1,9 @@
-import './App.css';
 
 const App = () => {
   return (
-    <div className="content">
+    <div>
       <h1>Provider</h1>
+      <a href="http://localhost:2000">Blog</a>
     </div>
   );
 };
