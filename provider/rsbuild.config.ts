@@ -19,10 +19,11 @@ export default defineConfig({
           name: 'provider',
           exposes: {
             './button': './src/components/Button/index.tsx'
-          }
-        })
-      ])
-    }
+          },
+          shared: ['react', 'react-dom'],
+        }),
+      ]);
+    },
   },
   plugins: [pluginReact()],
 });
