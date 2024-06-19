@@ -1,11 +1,24 @@
-# Rsbuild Project
+# Micro-frontend: Home
 
-## Setup
+## Table of Contents
+1. [About](#about)
+2. [Requirement](#requirement)
+3. [Install](#install)
+4. [Get Started](#get-started)
+5. [License](#license)
+
+## About
+Home
+
+## Requirement
+- Node >= v20.14.0 
+
+## Install
 
 Install the dependencies:
 
 ```bash
-pnpm install
+npm install
 ```
 
 ## Get Started
@@ -13,17 +26,20 @@ pnpm install
 Start the dev server:
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 Build the app for production:
 
 ```bash
-pnpm build
+npm run build
 ```
-
 Preview the production build locally:
 
 ```bash
-pnpm preview
+npm run preview
 ```
+
+## License
+
+[MIT License 2024](./../LICENSE.md)
