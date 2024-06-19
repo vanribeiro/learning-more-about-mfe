@@ -1,4 +1,4 @@
-# Micro-frontend: Feed News
+# Micro-frontend: Tech Feed
 
 ## Table of Contents
 1. [About](#about)
@@ -8,7 +8,7 @@
 5. [License](#license)
 
 ## About
-Feed News
+Tech Feed - The last news about tech
 
 ## Requirements
 - Node >= v20.14.0 

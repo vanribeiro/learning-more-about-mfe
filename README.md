@@ -14,10 +14,10 @@ MFE, Unit Testing and E2E.
 
 ## Install and Usage
 
-Each MFE contain your own project setup which can be follow in their respectives `README.md` files':
+Each MFE contains its own project setup which can be follow in their respectives `README.md` files':
 
 - [/home](/home/README.md)
-- [/feed](/feed/README.md)
+- [/tech-feed](/tech-feed/README.md)
 
 ## License
 
