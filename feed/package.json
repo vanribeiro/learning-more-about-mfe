@@ -8,14 +8,14 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "@module-federation/enhanced": "^0.1.20",
+    "@module-federation/enhanced": "^0.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@rsbuild/core": "^0.7.8",
     "@rsbuild/plugin-react": "^0.7.8",
-    "@types/node": "^20.14.4",
+    "@types/node": "^20.14.5",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "typescript": "^5.4.2"
