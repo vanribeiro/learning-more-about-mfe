@@ -18,7 +18,6 @@ describe('App component', () => {
     it('should render the consumer component', () => {
         render(<App />);
         const feed = screen.getByText('Consumer');
-        // @ts-ignore
         expect(feed).toBeInTheDocument();
     });
 });

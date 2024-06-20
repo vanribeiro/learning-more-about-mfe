@@ -20,7 +20,7 @@
   ],
   "include": [
     "src/**/*.ts", 
-    "<rootDir>/jest-setup.ts",
+    "jest-setup.ts",
     "**/*.test.ts",
     "**/*.test.tsx"
   ],
