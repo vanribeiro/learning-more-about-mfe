@@ -18,7 +18,8 @@
   "include": [
     "src/**/*", 
     "**/*.test.ts",
-    "**/*.test.tsx"
+    "**/*.test.tsx",
+    "jest-setup.ts"
   ],
   "exclude": [
     "**/*.spec.ts"

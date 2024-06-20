@@ -4,7 +4,7 @@ import App from './App';
 describe('App component', () => {
     it('should render the provider component', () => {
         render(<App />);
-        const feed = screen.getByText('Provider');
-        expect(feed).toBeInTheDocument();
+        const home = screen.getByText('Provider');
+        expect(home).toBeInTheDocument();
     });
 });

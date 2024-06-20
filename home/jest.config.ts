@@ -1,5 +1,9 @@
 export default {
 	testEnvironment: "jest-environment-jsdom",
+	testEnvironmentOptions: {
+		customExportConditions: [''],
+	},
+	setupFiles: ['<rootDir>/jest.polyfills.js'],
 	setupFilesAfterEnv: ["<rootDir>/jest-setup.ts"],
 	coverageDirectory : 'coverage',
 	collectCoverageFrom: [
