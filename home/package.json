@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
-    "preview": "rsbuild preview"
+    "preview": "rsbuild preview",
+    "test": "jest --coverage=false",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@module-federation/enhanced": "^0.1.20",
@@ -15,9 +17,17 @@
   "devDependencies": {
     "@rsbuild/core": "^0.7.8",
     "@rsbuild/plugin-react": "^0.7.8",
+    "@swc/core": "^1.6.3",
+    "@swc/jest": "^0.2.36",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.14.5",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.4.2"
   }
 }
