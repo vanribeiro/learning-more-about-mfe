@@ -1,4 +1,4 @@
-import Button from 'home/button';
+// import Button from 'home/button';
 import { useEffect, useState } from 'react';
 import { fetchData } from './../service/api';
 
@@ -19,7 +19,7 @@ const App = () => {
     <div className="content">
       <button type='button' onClick={() => history.back()}>voltar</button>
       <h1>Consumer</h1>
-      <Button />
+      {/* <Button /> */}
 
       <section>
         {list.map((item: any, index) => {

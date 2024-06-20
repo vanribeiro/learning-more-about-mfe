@@ -14,5 +14,9 @@
       "*": ["./@mf-types/*"]
     }
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "<rootDir>/jest-setup.ts",
+    "<rootDir>/**/*.ts"
+  ]
 }

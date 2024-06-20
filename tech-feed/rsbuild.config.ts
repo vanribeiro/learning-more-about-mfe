@@ -25,5 +25,7 @@ export default defineConfig({
   source: {
     define: publicVars,
   },
-  plugins: [pluginReact()],
+  plugins: [
+    pluginReact(),
+  ],
 });
