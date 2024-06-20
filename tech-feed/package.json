@@ -6,7 +6,8 @@
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
     "preview": "rsbuild preview",
-    "test": "jest"
+    "test": "jest --coverage=false",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@module-federation/enhanced": "^0.1.20",

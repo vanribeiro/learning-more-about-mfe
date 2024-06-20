@@ -10,13 +10,21 @@
     "resolveJsonModule": true,
     "moduleResolution": "bundler",
     "useDefineForClassFields": true,
+    "esModuleInterop": true,
     "paths":{
       "*": ["./@mf-types/*"]
     }
   },
+  "types":[
+    "node"
+  ],
   "include": [
-    "src",
+    "src/**/*.ts", 
     "<rootDir>/jest-setup.ts",
-    "<rootDir>/**/*.ts"
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ],
+  "exclude": [
+    "**/*.spec.ts"
   ]
 }
