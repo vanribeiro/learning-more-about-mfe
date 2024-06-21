@@ -18,7 +18,7 @@ export default defineConfig({
         new ModuleFederationPlugin({
           name: 'home',
           exposes: {
-            './button': './src/components/Button/index.tsx'
+            './headerPage': './src/components/Header/index.tsx'
           },
           shared: ['react', 'react-dom'],
         }),
