@@ -20,7 +20,14 @@ export default defineConfig({
           exposes: {
             './headerPage': './src/components/Header/index.tsx'
           },
-          shared: ['react', 'react-dom'],
+          shared: {
+            'react':{
+              requiredVersion: '^18.3.1'
+            }, 
+            'react-dom':{
+              requiredVersion: '^18.3.1'
+            }
+          },
         }),
       ]);
     },
