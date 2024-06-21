@@ -1,23 +1,44 @@
-# Learning more about Micro-frontends
+# Micro-frontend: Home
 
 ## Table of Contents
 1. [About](#about)
-3. [Install and Usage](#install-and-usage)
+2. [Requirement](#requirement)
+3. [Install](#install)
+4. [Get Started](#get-started)
 5. [License](#license)
 
 ## About
-MFE, Unit Testing and E2E.
+Home
 
-## Requirements
+## Requirement
 - Node >= v20.14.0 
-- Your Own [News API Key](https://newsapi.org/)
 
-## Install and Usage
+## Install
 
-Each MFE contains its own project setup which can be follow in their respectives `README.md` files':
+Install the dependencies:
 
-- [/home](/home/README.md)
-- [/tech-feed](/tech-feed/README.md)
+```bash
+npm install
+```
+
+## Get Started
+
+Start the dev server:
+
+```bash
+npm run dev
+```
+
+Build the app for production:
+
+```bash
+npm run build
+```
+Preview the production build locally:
+
+```bash
+npm run preview
+```
 
 ## License
 
