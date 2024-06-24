@@ -1,16 +1,15 @@
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import IFrame from "../../components/IFrame";
 import TechNews from 'techfeed/TechNews';
+import Sidebar from "../../components/Siderbar";
 
 const Home = () => {
   return (
     <>
-      <h1>Provider</h1>
-      <a href="http://localhost:2000">Home</a>
-      <IFrame>
-        <Header />
-      </IFrame>
+      <Header />
+      <Sidebar />
       <TechNews />
+      <Footer />
     </>
   );
 };

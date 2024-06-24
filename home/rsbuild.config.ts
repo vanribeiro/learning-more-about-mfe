@@ -20,7 +20,7 @@ export default defineConfig({
           name: 'home',
           remotes: {
             techfeed:
-              'techfeed@http://localhost:2000/remoteEntry.js',
+              'techfeed@http://localhost:2000/mf-manifest.json',
           },
           shared: {
             ...dependencies,

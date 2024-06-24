@@ -10,7 +10,6 @@ function CardList({
     list
 }: Props) {
 	return (
-        // <section>
         <>
         {list.map((item: any, index) => {
             return (
@@ -29,7 +28,6 @@ function CardList({
             );
         })}
         </>
-        // </section>
 	);
 }
 

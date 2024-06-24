@@ -4,22 +4,21 @@ import { ModuleFederationPlugin } from '@module-federation/enhanced/rspack';
 import { dependencies } from './package.json';
 
 const { publicVars } = loadEnv({ prefixes: ['REACT_APP_'] });
+const PORT: number = 2000;
 
 export default defineConfig({
   server: {
-    port: 2000,
+    port: PORT,
+  },
+  dev: {
+    assetPrefix: `http://localhost:${PORT}`
   },
   tools: {
     rspack: (config, { appendPlugins }) => {
       appendPlugins([
         new ModuleFederationPlugin({
           name: 'techfeed',
-          filename: 'remoteEntry.js',
-          remotes: {
-            home:
-              'home@http://localhost:3000/mf-manifest.json',
-          },
-          exposes: {
+          exposes:{
             './TechNews': './src/pages/TechNews/index.tsx'
           },
           shared: {

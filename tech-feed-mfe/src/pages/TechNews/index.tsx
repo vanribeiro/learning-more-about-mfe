@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect, useState } from "react";
 import { fetchData } from "../../service/api";
 import CardList from "../../components/CardList";
@@ -26,7 +25,7 @@ const News = () => {
 					paddingBottom: 16,
 				}}>
 				<Box sx={{ marginBottom: 4 }}>
-					<Typography variant="h1">Tech News</Typography>
+					<Typography variant="h3">Tech News</Typography>
 				</Box>
 				<Grid
 					container
