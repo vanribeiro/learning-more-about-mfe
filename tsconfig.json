@@ -11,6 +11,9 @@
     "moduleResolution": "bundler",
     "useDefineForClassFields": true,
     "esModuleInterop": true,
+    "paths":{
+      "*": ["./@mf-types/*"]
+    }
   },
   "types":[
     "node"

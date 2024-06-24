@@ -10,12 +10,17 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
+    "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.11.4",
     "@module-federation/enhanced": "^0.1.20",
+    "@softarc/native-federation": "^2.0.9",
+    "@softarc/native-federation-esbuild": "^2.0.9",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "undici": "^6.19.2"
   },
   "devDependencies": {
+    "@module-federation/native-federation-typescript": "^0.4.4",
     "@rsbuild/core": "^0.7.8",
     "@rsbuild/plugin-react": "^0.7.8",
     "@swc/core": "^1.6.3",
