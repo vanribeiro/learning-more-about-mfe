@@ -1,51 +1,31 @@
-# Micro-frontend: Home
+# Micro-frontend
+
+Learning about microfront-ends
 
 ## Table of Contents
 1. [About](#about)
 2. [Requirement](#requirement)
 3. [Install](#install)
-4. [Get Started](#get-started)
-5. [License](#license)
+4. [License](#license)
+5. [About Me]()
 
 ## About
-Home Page
-
-### Disclaimer:
-
-This is Provider MFE. Access the repo in the bellow link:
-
-- [MFE Consumer Repo](https://github.com/vanribeiro/tech-feed-mfe)
+Micro front-end, Unity Tests, Tests E2E
 
 ## Requirement
 - Node >= v20.14.0 
 
 ## Install
 
-Install the dependencies:
-
-```bash
-npm install
-```
-
-## Get Started
-
-Start the dev server:
-
-```bash
-npm run dev
-```
-
-Build the app for production:
-
-```bash
-npm run build
-```
-Preview the production build locally:
-
-```bash
-npm run preview
-```
+- [MFE Home](/home/README.md)
+- [Tech News](/tech-feed-mfe/README.md)
 
 ## License
 
 [MIT License 2024](/LICENSE.md)
+
+## About Me
+
+- [Site](https://vanribeiro.github.io/)
+- [LinkedIn](https://www.linkedin.com/in/vanribeiro/)
+- [Github](https://github.com/vanribeiro)
