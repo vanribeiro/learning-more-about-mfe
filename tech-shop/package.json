@@ -14,11 +14,13 @@
     "@emotion/styled": "^11.11.5",
     "@fontsource/roboto": "^5.0.13",
     "@module-federation/enhanced": "^0.1.20",
+    "@mui/icons-material": "^5.15.20",
     "@mui/material": "^5.15.20",
     "@softarc/native-federation": "^2.0.9",
     "@softarc/native-federation-esbuild": "^2.0.9",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0",
+    "react-router-dom": "^6.24.0",
     "undici": "^6.19.2"
   },
   "devDependencies": {

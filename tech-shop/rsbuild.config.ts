@@ -24,7 +24,8 @@ export default defineConfig({
           },
           exposes:{
             './TechNews': './src/pages/TechNews/index.tsx',
-            './ListLastNewsTopics': './src/components/ListLastNewsTopics/index.tsx'
+            './ListLastNewsTopics': './src/components/ListLastNewsTopics/index.tsx',
+            './Products': './src/pages/Products/index.tsx'
           },
           shared: {
             ...dependencies,

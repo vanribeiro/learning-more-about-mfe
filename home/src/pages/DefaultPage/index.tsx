@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 const DefaultPage = () => {
   return (
     <>
-      <Header title="Shopping" />
+      <Header title="Shopping"/>
       <Outlet />
       <Footer />
     </>

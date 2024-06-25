@@ -1,0 +1,21 @@
+.category__container{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+@media screen and (max-width: 1199px){
+    .category__container{
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .category__container{
+        height: 200px;
+    }
+}

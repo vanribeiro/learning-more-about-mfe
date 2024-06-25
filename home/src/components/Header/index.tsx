@@ -1,22 +1,18 @@
+import { ArrowBack } from "@mui/icons-material";
 import { Box, Container, Typography } from "@mui/material";
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 interface Props{
-	title: string
+	title: string,
+	showBackArrow?: boolean;
+	arrowComponent?: ReactNode
 }
 
-export default function Header({ title }: Props) {
-	const [pageTitle, setPageTitle] = useState(title);
+export default function Header({ title, arrowComponent}: Props) {
 
 	useEffect(() => {
-		
-		if (window.location.pathname === "/tech-news") {
-			setPageTitle("Tech News");
-			document.title = "Tech News";
-		} else {
-			document.title = title;
-		}
-
+		document.title = title;
 	}, []);
 
 	return (
@@ -24,8 +20,11 @@ export default function Header({ title }: Props) {
 			margin: '16px 0'
 		}}>
 			<Container maxWidth="xl">
-				<Typography variant="h1" sx={{ fontSize: "4rem" }}>
-					{pageTitle}
+				<Link to='/'>
+					{arrowComponent}
+				</Link>
+				<Typography variant="h1" sx={{ fontSize: "4rem", color: '#1a1a1a' }}>
+					{title}
 				</Typography>
 			</Container>
 		</Box>
