@@ -1,12 +1,12 @@
-import * as React from "react";
+import { useState, useEffect } from "react";
 import { Grid, Typography } from "@mui/material";
 import { fetchData } from "../../service/api";
 import LastNewsTopics from "../LastNewsTopics";
 
 function ListLastNewsTopics() {
-	const [list, setList] = React.useState([]);
+	const [list, setList] = useState([]);
 
-	React.useEffect(() => {
+	useEffect(() => {
 		const fetchApi = async () => {
 			const result: any = await fetchData("tech", "pt", 6);
 			setList(result?.articles);
