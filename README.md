@@ -4,14 +4,19 @@ Learning about microfront-ends
 
 ## Table of Contents
 1. [About](#about)
-2. [Requirement](#requirement)
-3. [Technologies](#technologies)
-4. [Install](#install)
-5. [License](#license)
-6. [About Me](#about-me)
+2. [Features](#features)
+3. [Requirement](#requirement)
+4. [Technologies](#technologies)
+5. [Install](#install)
+6. [License](#license)
+7. [About Me](#about-me)
 
 ## About
 Micro front-end, Unity Tests, Tests E2E
+
+## Features
+1. [Home](/home/README.md) - share layout items page(Header, Footer, ...) with Tech-Shop MFE
+2. [Tech-Shop MFE](/tech-shop/README.md) - share a component which provides news from a RESTful API and product catalog page with home
 
 ## Requirement
 - Node >= v20.14.0 
