@@ -14,7 +14,8 @@ export default {
 		'!<rootDir>/coverage/**/*.{ts,tsx,js,jsx}',
 		'!<rootDir>/src/bootstrap.{ts,tsx,js,jsx}',
 		'!<rootDir>/src/index.{ts,tsx,js,jsx}',
-		'!<rootDir>/rsbuild.config.{ts,js}'
+		'!<rootDir>/rsbuild.config.{ts,js}',
+		'!<rootDir>/src/assets/**/*'
 	],
 	transform: {
 		"^.+\\.(t|j)sx?$": [
@@ -34,10 +35,5 @@ export default {
 				isModule: "unknown",
 			},
 		],
-	},
-	moduleNameMapper: {
-		"\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-			"<rootDir>/tests/mocks/file-mock.js",
-		"\\.(css|less|scss|sass)$": "<rootDir>/tests/mocks/style-mock.js",
 	},
 };

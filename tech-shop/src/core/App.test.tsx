@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import { server } from './tests/services/node';
+import { server } from './../tests/services/node';
 import App from './App';
 
 beforeAll(() => {
@@ -33,6 +33,5 @@ describe('App component', () => {
         render(<App />);
         const button = screen.getByRole('button', { name: /voltar/i});
         fireEvent.click(button);
-        // expect(button).toBeInTheDocument();
     });
 });
