@@ -1,4 +1,4 @@
-# Micro-frontend: Tech Feed
+# Micro-frontend: Tech Shop
 
 ## Table of Contents
 1. [About](#about)
@@ -8,13 +8,7 @@
 5. [License](#license)
 
 ## About
-Tech Feed - The last news about tech
-
-### Disclaimer
-This is a MFE Consumer. Access the repo in the bellow link:
-
-- [MFE Provider Repo](https://github.com/vanribeiro/learning-more-about-mfe)
-
+Tech Shop - Tech Products
 
 ## Requirements
 - Node >= v20.14.0 

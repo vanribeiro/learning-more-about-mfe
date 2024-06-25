@@ -19,8 +19,8 @@ export default defineConfig({
         new ModuleFederationPlugin({
           name: 'home',
           remotes: {
-            techfeed:
-              'techfeed@http://localhost:2000/mf-manifest.json',
+            techshop:
+              'techshop@http://localhost:2000/mf-manifest.json',
           },
           shared: {
             ...dependencies,

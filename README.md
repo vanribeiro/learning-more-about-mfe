@@ -18,7 +18,7 @@ Micro front-end, Unity Tests, Tests E2E
 ## Install
 
 - [MFE Home](/home/README.md)
-- [Tech News](/tech-feed-mfe/README.md)
+- [Tech Shop](/tech-shop/README.md)
 
 ## License
 

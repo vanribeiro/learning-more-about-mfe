@@ -17,7 +17,7 @@ export default defineConfig({
     rspack: (config, { appendPlugins }) => {
       appendPlugins([
         new ModuleFederationPlugin({
-          name: 'techfeed',
+          name: 'tech-shop',
           exposes:{
             './TechNews': './src/pages/TechNews/index.tsx'
           },
