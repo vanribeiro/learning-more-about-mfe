@@ -1,19 +1,18 @@
-import * as React from 'react';
-import CardNews from './../CardNews';
+import CardNews from '../CardNews';
 import { Grid } from '@mui/material';
 
 interface Props{
     list: Array<any>;
 }
 
-function CardList({
+function CardListNews({
     list
 }: Props) {
 	return (
         <>
         {list.map((item: any, index) => {
             return (
-                <Grid item xs={2} sm={4} md={4} key={index} sx={{ display: 'flex', justifyContent: 'center'}}>
+                <Grid item xs={4} sm={4} md={3} key={index} sx={{ display: 'flex', justifyContent: 'center'}}>
                     <CardNews
                         urlToImage={item?.urlToImage}
                         key={`${item?.id}-${index}`}
@@ -31,4 +30,4 @@ function CardList({
 	);
 }
 
-export default CardList;
+export default CardListNews;

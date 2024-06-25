@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -27,10 +26,10 @@ function CardNews({
 	description,
 }: Props) {
 	return (
-		<Card sx={{ maxWidth: 345 }}>
+		<Card sx={{ maxWidth: 300 }}>
 			<CardMedia
 				component="img"
-				alt="green iguana"
+				alt={title}
 				height="140"
 				image={urlToImage}
 			/>

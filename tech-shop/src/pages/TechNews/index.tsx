@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import { fetchData } from "../../service/api";
-import CardList from "../../components/CardList";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import CardListNews from "../../components/CardListNews";
+import { Container, Grid } from "@mui/material";
 
 const News = () => {
 	const [list, setList] = useState([]);
 
 	useEffect(() => {
 		const fetchApi = async () => {
-			const result: any = await fetchData();
+			const result: any = await fetchData('tech', 'pt', 12);
 			setList(result?.articles);
 		};
 
@@ -20,9 +20,9 @@ const News = () => {
 			<Container maxWidth='xl'>
 				<Grid
 					container
-					spacing={{ xs: 2, md: 3 }}
+					spacing={{ xs: 2, md: 1 }}
 					columns={{ xs: 4, sm: 8, md: 12 }}>
-					<CardList list={list} />
+					<CardListNews list={list} />
 				</Grid>
 			</Container>
 		</>

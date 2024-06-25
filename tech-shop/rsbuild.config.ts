@@ -17,9 +17,14 @@ export default defineConfig({
     rspack: (config, { appendPlugins }) => {
       appendPlugins([
         new ModuleFederationPlugin({
-          name: 'tech-shop',
+          name: 'techshop',
+          remotes: {
+            home:
+              'home@http://localhost:3000/mf-manifest.json',
+          },
           exposes:{
-            './TechNews': './src/pages/TechNews/index.tsx'
+            './TechNews': './src/pages/TechNews/index.tsx',
+            './ListLastNewsTopics': './src/components/ListLastNewsTopics/index.tsx'
           },
           shared: {
             ...dependencies,

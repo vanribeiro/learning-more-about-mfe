@@ -22,6 +22,10 @@ export default defineConfig({
             techshop:
               'techshop@http://localhost:2000/mf-manifest.json',
           },
+          exposes:{
+            './Header': './src/components/Header/index.tsx',
+            './Footer': './src/components/Footer/index.tsx',
+          },
           shared: {
             ...dependencies,
             'react':{
