@@ -1,6 +1,6 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import TechNews from 'techfeed/TechNews';
+// import TechNews from 'techfeed/TechNews';
 import Sidebar from "../../components/Siderbar";
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <Header />
       <Sidebar />
-      <TechNews />
+      {/* <TechNews /> */}
       <Footer />
     </>
   );
