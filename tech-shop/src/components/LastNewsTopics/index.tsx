@@ -1,6 +1,6 @@
 import * as React from "react";
 import Typography from "@mui/material/Typography";
-import { Box, Link } from "@mui/material";
+import { Box, Grid, Link } from "@mui/material";
 
 interface Props {
 	title: string;
@@ -18,7 +18,7 @@ function LastNewsTopics({
 	publishedAt,
 }: Props) {
 	return (
-		<Box>
+		<Grid item xs={2} sm={4} md={2}>
 			<Box sx={{ marginBottom: "16px" }}>
 				<Typography gutterBottom variant="body1" component="div">
 					<Link
@@ -40,7 +40,7 @@ function LastNewsTopics({
 					</Typography>
 				</Typography>
 			</Box>
-		</Box>
+		</Grid>
 	);
 }
 

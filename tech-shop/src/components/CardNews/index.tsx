@@ -26,7 +26,7 @@ function CardNews({
 	description,
 }: Props) {
 	return (
-		<Card sx={{ maxWidth: 300 }}>
+		<Card sx={{ maxWidth: 345 }}>
 			<CardMedia
 				component="img"
 				alt={title}

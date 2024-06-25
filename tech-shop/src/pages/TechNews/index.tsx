@@ -20,7 +20,7 @@ const News = () => {
 			<Container maxWidth='xl'>
 				<Grid
 					container
-					spacing={{ xs: 2, md: 1 }}
+					spacing={{ xs: 2, md: 3 }}
 					columns={{ xs: 4, sm: 8, md: 12 }}>
 					<CardListNews list={list} />
 				</Grid>

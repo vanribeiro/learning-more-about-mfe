@@ -2,11 +2,12 @@ import { Container, Typography } from "@mui/material";
 import setup from './../../assets/images/setup.jpg';
 import './index.css';
 import { ArrowForward } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 function Banner() {
 	return (
 		<Container maxWidth="xl" sx={{ position: 'relative', padding: '0px !important'}}>
-				<a className="banner__link" href="/">
+				<Link className="banner__link" to="/tech-news">
 					<img className="banner__image" src={setup} alt="computador desktop" />
 					<div className="banner__layer">
 						<div className="banner__text-container">
@@ -23,7 +24,7 @@ function Banner() {
 							</div>
 						</div>
 					</div>
-				</a>
+				</Link>
 		</Container>
 	);
 }
