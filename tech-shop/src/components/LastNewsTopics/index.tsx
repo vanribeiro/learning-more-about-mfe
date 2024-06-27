@@ -4,7 +4,7 @@ import { Box, Grid, Link } from "@mui/material";
 
 interface Props {
 	title: string;
-	author: string;
+	author?: string;
 	sourceName: string;
 	publishedAt: string;
 	url: string;
@@ -13,7 +13,6 @@ interface Props {
 function LastNewsTopics({
 	title,
 	url,
-	author,
 	sourceName,
 	publishedAt,
 }: Props) {
@@ -33,9 +32,8 @@ function LastNewsTopics({
 					</Link>
 				</Typography>
 				<Typography variant="body2" color="text.secondary">
-					{author}{" "}
 					<Typography variant="caption" color="text.secondary">
-						| {new Date(publishedAt).toLocaleDateString("pt-br")} -{" "}
+						{new Date(publishedAt).toLocaleDateString("pt-br")} -{" "}
 						{sourceName}
 					</Typography>
 				</Typography>

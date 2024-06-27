@@ -8,12 +8,14 @@ const Router = () => {
   return (
     <>
         <BrowserRouter>
+          <React.StrictMode>
             <Routes>
                 <Route path='/' element={<DefaultPage />}>
                     <Route index element={<TechNews />} />
                     <Route path='/tech-shopping' element={<ProductsList />} />
                 </Route>
             </Routes>
+          </React.StrictMode>
         </BrowserRouter>
     </>
   );

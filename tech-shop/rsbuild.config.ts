@@ -10,6 +10,10 @@ export default defineConfig({
   server: {
     port: PORT,
   },
+  html: {
+    title: 'Shopping',
+    favicon: './src/assets/favicon/favicon.ico'
+  },
   dev: {
     assetPrefix: `http://localhost:${PORT}`
   },

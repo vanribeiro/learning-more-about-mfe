@@ -35,7 +35,7 @@ function CardNews({
 			/>
 			<CardContent>
 				<Typography variant="body2" color="text.secondary">
-					{author}
+					{author ? author : sourceName}
 				</Typography>
 				<Typography variant="caption" color="text.secondary">
 					{new Date(publishedAt).toLocaleDateString("pt-br")} -{" "}
