@@ -1,2 +1,2 @@
-declare const ProductsList: () => import("react/jsx-runtime").JSX.Element;
-export default ProductsList;
+declare const Products: () => import("react/jsx-runtime").JSX.Element;
+export default Products;

@@ -27,7 +27,6 @@ export default defineConfig({
               'home@http://localhost:3000/mf-manifest.json',
           },
           exposes:{
-            './TechNews': './src/pages/TechNews/index.tsx',
             './ListLastNewsTopics': './src/components/ListLastNewsTopics/index.tsx',
             './Products': './src/pages/Products/index.tsx'
           },

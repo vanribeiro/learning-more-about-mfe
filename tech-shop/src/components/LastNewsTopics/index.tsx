@@ -1,21 +1,14 @@
 import * as React from "react";
 import Typography from "@mui/material/Typography";
 import { Box, Grid, Link } from "@mui/material";
-
-interface Props {
-	title: string;
-	author?: string;
-	sourceName: string;
-	publishedAt: string;
-	url: string;
-}
+import INews from "../../interfaces/news";
 
 function LastNewsTopics({
 	title,
 	url,
-	sourceName,
+	source,
 	publishedAt,
-}: Props) {
+}: INews) {
 	return (
 		<Grid item xs={2} sm={4} md={2}>
 			<Box sx={{ marginBottom: "16px" }}>
@@ -28,13 +21,12 @@ function LastNewsTopics({
 						target="_blank"
 						rel="noopener noreferrer"
 						underline="hover">
-						{title}
+						{title ? title : "Título Indisponível da notícia está indisponível" }
 					</Link>
 				</Typography>
 				<Typography variant="body2" color="text.secondary">
 					<Typography variant="caption" color="text.secondary">
-						{new Date(publishedAt).toLocaleDateString("pt-br")} -{" "}
-						{sourceName}
+						{ (`${new Date(publishedAt).toLocaleDateString("pt-br")} - ${source?.name}`) }
 					</Typography>
 				</Typography>
 			</Box>

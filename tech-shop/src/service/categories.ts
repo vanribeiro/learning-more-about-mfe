@@ -1,4 +1,6 @@
-const categories = [
+import { ICategory } from "../interfaces/category";
+
+const categories: Array<ICategory> = [
     {
         id: 1,
         name: 'Acessórios',

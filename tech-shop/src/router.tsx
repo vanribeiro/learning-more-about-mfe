@@ -1,8 +1,6 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import DefaultPage from './pages/DefaultPage';
-import { TechNews } from './pages';
-import ProductsList from './pages/Products';
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Home, Products, LastNewsTopics } from './pages';
 
 const Router = () => {
   return (
@@ -10,10 +8,9 @@ const Router = () => {
         <BrowserRouter>
           <React.StrictMode>
             <Routes>
-                <Route path='/' element={<DefaultPage />}>
-                    <Route index element={<TechNews />} />
-                    <Route path='/tech-shopping' element={<ProductsList />} />
-                </Route>
+                <Route path='/' element={<Home />} />
+                <Route path='/tech-shopping' element={<Products />} />
+                <Route path='/list-last-news-topics' element={<LastNewsTopics />} />
             </Routes>
           </React.StrictMode>
         </BrowserRouter>

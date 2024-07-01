@@ -1,27 +1,14 @@
-import { Container, Grid, Typography } from "@mui/material";
-import categories from "./categories";
-import Category from './../../components/Category'
+import React from "react";
+import categories from "../../service/categories";
+import CategoryList from './../../components/CategoryList';
 
-const ProductsList = () => {
+const Products = () => {
 
 	return (
 		<>
-			<Container maxWidth="xl">
-				<Grid
-					container
-					spacing={{ xs: 2, md: 3 }}
-					columns={{ xs: 4, sm: 8, md: 12 }}>
-					{categories.map((category, index) => (
-						<Grid item xs={4} sm={4} md={4} key={index}>
-                            <Category style={category.style}>
-                                {category.name}
-                            </Category>
-						</Grid>
-					))}
-				</Grid>
-			</Container>
+			<CategoryList list={categories} data-testid="category-list" />
 		</>
 	);
 };
 
-export default ProductsList;
+export default Products;

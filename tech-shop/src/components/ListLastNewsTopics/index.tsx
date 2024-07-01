@@ -2,9 +2,11 @@ import { useState, useEffect } from "react";
 import { Grid, Typography } from "@mui/material";
 import { fetchData } from "../../service/api";
 import LastNewsTopics from "../LastNewsTopics";
+import React from "react";
+import INews from "../../interfaces/news";
 
 function ListLastNewsTopics() {
-	const [list, setList] = useState([]);
+	const [list, setList] = useState<Array<INews>>([]);
 
 	useEffect(() => {
 		const fetchApi = async () => {
@@ -24,15 +26,16 @@ function ListLastNewsTopics() {
 					container
 					spacing={{ xs: 2, md: 3 }}
 					columns={{ xs: 4, sm: 8, md: 12 }}>
-					{list.map((item: any, index) => {
+					{list.map((item: INews, index) => {
 						return (
 							<LastNewsTopics
-								key={`${item?.id}-${index}`}
+								key={`${index}`}
 								title={item?.title}
 								author={item?.author}
-								sourceName={item?.source.name}
+								source={item.source}
 								publishedAt={item?.publishedAt}
 								url={item?.url}
+								data-testid={`last-news-topics-${index}`}
 							/>
 						);
 					})}

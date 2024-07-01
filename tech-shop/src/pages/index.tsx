@@ -1,5 +1,9 @@
-import TechNews from './TechNews';
+import Products from './Products';
+import Home from './Home';
+import LastNewsTopics from './LastNewsTopics';
 
 export {
-    TechNews
+    Products,
+    Home,
+    LastNewsTopics
 };

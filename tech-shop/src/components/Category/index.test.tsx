@@ -1,0 +1,24 @@
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import Category from '.';
+
+describe('Category Component', () => {
+  it('should render with no errors', () => {
+
+    const style = {
+        color:'white',
+        backgroundColor:'black'
+    };
+
+    render(
+        <Category style={style}>
+            Category Name
+        </Category>
+    );
+
+    const categoryName = screen.getByText('Category Name');
+    expect(categoryName).toBeInTheDocument();
+
+  });
+
+});
