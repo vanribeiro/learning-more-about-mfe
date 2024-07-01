@@ -1,8 +1,8 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import { Grid, Typography } from "@mui/material";
 import { fetchData } from "../../service/api";
 import LastNewsTopics from "../LastNewsTopics";
-import React from "react";
 import INews from "../../interfaces/news";
 
 function ListLastNewsTopics() {
@@ -18,7 +18,7 @@ function ListLastNewsTopics() {
 	}, []);
 	return (
 		<>
-			<Grid>
+			<Grid data-testid="list-last-news-topics">
 				<Grid xl={12} sx={{ marginTop: "24px", marginBottom: "16px" }}>
 					<Typography variant="h5">Tech News</Typography>
 				</Grid>

@@ -7,7 +7,7 @@
     "build": "rsbuild build",
     "preview": "rsbuild preview",
     "test": "jest --coverage=false",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage --watchAll"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",

@@ -1,19 +1,16 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home, Products, LastNewsTopics } from './pages';
+import { Route, Routes } from 'react-router-dom';
+import { Home, Products, LastNewsTopics, NotFound } from './pages';
 
 const Router = () => {
   return (
     <>
-        <BrowserRouter>
-          <React.StrictMode>
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/tech-shopping' element={<Products />} />
-                <Route path='/list-last-news-topics' element={<LastNewsTopics />} />
-            </Routes>
-          </React.StrictMode>
-        </BrowserRouter>
+      <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/tech-shopping' element={<Products />} />
+          <Route path='/list-last-news-topics' element={<LastNewsTopics />} />
+          <Route path='*' element={<NotFound />} />
+      </Routes>
     </>
   );
 };

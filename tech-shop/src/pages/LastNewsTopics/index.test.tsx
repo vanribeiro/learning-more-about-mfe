@@ -1,16 +1,16 @@
 import { render, screen } from '@testing-library/react';
-import Home from '.';
+import LastNewsTopics from '.';
 import { BrowserRouter } from 'react-router-dom';
 
-describe('Home component', () => {
+describe('LastNewsTopics component', () => {
 
-    it('should render the core component', () => {
+    it('should render with no errors', () => {
         render(
             <BrowserRouter>
-                <Home />
+                <LastNewsTopics />
             </BrowserRouter>
         );
-        const component = screen.getByTestId('home');
+        const component = screen.getByTestId('list-last-news-topics');
         expect(component).toBeInTheDocument();
     });
 

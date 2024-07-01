@@ -6,7 +6,7 @@ const Home = () => {
 
   return (
     <>
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" data-testid="home">
         <Typography component="h3" variant="h3" gutterBottom>
             Home
         </Typography>

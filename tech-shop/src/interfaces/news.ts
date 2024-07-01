@@ -1,9 +1,9 @@
 interface INews {
-    title: string;
+    title: string | null;
     urlToImage?: string;
-    author?: string;
+    author?: string | null;
     source?: {
-        name: string;
+        name: string | null;
     };
     publishedAt: string;
     description?: string;

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import Typography from "@mui/material/Typography";
 import { Box, Grid, Link } from "@mui/material";
 import INews from "../../interfaces/news";
@@ -21,7 +21,7 @@ function LastNewsTopics({
 						target="_blank"
 						rel="noopener noreferrer"
 						underline="hover">
-						{title ? title : "Título Indisponível da notícia está indisponível" }
+						{title ? title : "Título da notícia indisponível" }
 					</Link>
 				</Typography>
 				<Typography variant="body2" color="text.secondary">
