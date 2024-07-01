@@ -1,16 +1,22 @@
-import React from "react";
 import { useState, useEffect } from "react";
 import { Grid, Typography } from "@mui/material";
 import { fetchData } from "../../service/api";
 import LastNewsTopics from "../LastNewsTopics";
 import INews from "../../interfaces/news";
 
+const fetchInit = {
+	search: "tech",
+	language: "pt",
+	pageSize: 6,
+	sortBy: "publishedAt"
+}
+
 function ListLastNewsTopics() {
 	const [list, setList] = useState<Array<INews>>([]);
 
 	useEffect(() => {
 		const fetchApi = async () => {
-			const result: any = await fetchData("tech", "pt", 6);
+			const result: any = await fetchData(fetchInit);
 			setList(result?.articles);
 		};
 

@@ -1,25 +1,27 @@
-import { render, screen } from '@testing-library/react';
+import { act, render, screen, waitFor } from '@testing-library/react';
 import { server } from '../../tests/services/node';
 import ListLastNewsTopics from '.';
 
-beforeAll(() => {
-    return server.listen();
-});
+beforeAll(() => server.listen());
 
-afterEach(() => {
-    return server.resetHandlers();
-});
+afterEach(() => server.resetHandlers());
 
-afterAll(() => {
-    return server.close();
-})
+afterAll(() => server.close());
 
 describe('ListLastNewsTopics component', () => {
 
-    it('should render with no errors', () => {
-        render(<ListLastNewsTopics />);
-        const techNews = screen.getByText('Tech News');
-        expect(techNews).toBeInTheDocument();
+    it('should render with no errors', async () => {
+
+        act(() => {
+            render(<ListLastNewsTopics />);
+        });
+
+        await waitFor(() => {
+            const techNews = screen.queryByText('Tech News');
+            expect(techNews).toBeInTheDocument();
+        });
+
     });
 
 });
+
