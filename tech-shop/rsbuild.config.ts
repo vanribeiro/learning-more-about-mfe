@@ -2,9 +2,28 @@ import { defineConfig, loadEnv } from '@rsbuild/core';
 import { pluginReact } from '@rsbuild/plugin-react';
 import { ModuleFederationPlugin } from '@module-federation/enhanced/rspack';
 import { dependencies } from './package.json';
+import { NativeFederationTypeScriptRemote } from '@module-federation/native-federation-typescript/webpack';
+import { NativeFederationTestsRemote } from '@module-federation/native-federation-tests/webpack';
 
 const { publicVars } = loadEnv({ prefixes: ['REACT_APP_'] });
 const PORT: number = 2000;
+
+const moduleFederationConfig = {
+  name: 'techshop',
+  exposes:{
+    './ListLastNewsTopics': './src/components/ListLastNewsTopics',
+    './Products': './src/pages/Products'
+  },
+  shared: {
+   ...dependencies,
+    'react':{
+      requiredVersion: '^18.3.1'
+    }, 
+    'react-dom':{
+      requiredVersion: '^18.3.1'
+    }
+  },
+}
 
 export default defineConfig({
   server: {
@@ -22,16 +41,12 @@ export default defineConfig({
       appendPlugins([
         new ModuleFederationPlugin({
           name: 'techshop',
-          remotes: {
-            home:
-              'home@http://localhost:3000/mf-manifest.json',
-          },
           exposes:{
-            './ListLastNewsTopics': './src/components/ListLastNewsTopics/index.tsx',
-            './Products': './src/pages/Products/index.tsx'
+            './ListLastNewsTopics': './src/components/ListLastNewsTopics',
+            './Products': './src/pages/Products'
           },
           shared: {
-            ...dependencies,
+           ...dependencies,
             'react':{
               requiredVersion: '^18.3.1'
             }, 
@@ -39,6 +54,11 @@ export default defineConfig({
               requiredVersion: '^18.3.1'
             }
           },
+        }),
+        NativeFederationTypeScriptRemote({moduleFederationConfig}),
+        NativeFederationTestsRemote({
+          moduleFederationConfig,
+          additionalBundlerConfig: { format: 'esm' },
         }),
       ]);
     },

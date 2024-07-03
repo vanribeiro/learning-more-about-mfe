@@ -31,6 +31,7 @@ The main libs and packages which were used in this project:
 - [Jest](https://jestjs.io/) - [github](https://github.com/jestjs/jest)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - [github](https://github.com/testing-library/react-testing-library)
 - [MSW](https://mswjs.io/) - [github](https://github.com/mswjs/msw)
+- [wait-on](https://github.com/jeffbski/wait-on)
 
 ## Install
 
