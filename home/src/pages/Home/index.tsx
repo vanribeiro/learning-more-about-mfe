@@ -1,14 +1,19 @@
+import React from "react";
 import { Container } from "@mui/material";
+
 import Banner from "../../components/Banner";
-import ListLastNewsTopics from 'techshop/ListLastNewsTopics';
+// import { ErrorBoundary } from "react-error-boundary";
+// const ListLastNewsTopics = React.lazy(() => import("techshop/ListLastNewsTopics"));
 
 const Home = () => {
   return (
     <>
       <Banner />
-      <Container maxWidth="xl">
-        <ListLastNewsTopics />
-      </Container>
+      {/* <Container maxWidth="xl">
+        <ErrorBoundary fallback={<div>Something went wrong</div>}>
+          <ListLastNewsTopics />
+        </ErrorBoundary>
+      </Container> */}
     </>
   );
 };

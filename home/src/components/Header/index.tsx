@@ -32,6 +32,7 @@ export default function Header({ title, arrowComponent}: Props) {
 					sx={{ fontSize: "4rem", color: "#1a1a1a" }}>
 					{showArrow && (
 						<ButtonBase
+							data-testid="back-button"
 							sx={{ color: "#1a1a1a", marginRight: "16px" }}
 							onClick={() => navigate("/")}>
 							{arrowComponent}
