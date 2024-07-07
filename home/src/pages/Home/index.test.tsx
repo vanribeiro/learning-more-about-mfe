@@ -1,15 +1,15 @@
-import Home from '.';
-import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
-import { act } from '@testing-library/react';
-import ReactDOM from 'react-dom/client';
-
 const ListLastNewsTopics = React.lazy(() => import("techshop/ListLastNewsTopics"));
 
 jest.mock('techshop/ListLastNewsTopics', 
-    () => ({ ListLastNewsTopics: () => 'ListLastNewsTopics'}),
+    () => ({ ListLastNewsTopics: () => ListLastNewsTopics}),
     { virtual: true }
 );
+
+import Home from '.';
+import { BrowserRouter } from 'react-router-dom';
+import { act } from '@testing-library/react';
+import ReactDOM from 'react-dom/client';
 
 const container = document.createElement('div');
 document.body.appendChild(container);
