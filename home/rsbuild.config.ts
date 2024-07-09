@@ -48,12 +48,9 @@ export default defineConfig({
       appendPlugins ([
         // NativeFederationTypeScriptHost({
         //   moduleFederationConfig: moduleFederationConfig,
-        //   deleteTypesFolder: false,
         // }),
         // NativeFederationTestsHost({
         //   moduleFederationConfig: moduleFederationConfig,
-        //   mocksFolder: './src/tests/mocks',
-        //   deleteTestsFolder: false,
         // }),
         new ModuleFederationPlugin(moduleFederationConfig),
       ]);
