@@ -22,7 +22,9 @@ export default function Header({ title, arrowComponent}: Props) {
 	}, []);
 
 	return (
-		<Box
+		<Box 
+			data-testid={`header-${title.toLowerCase().replace(' ', '-')}`}
+			role="header"
 			sx={{
 				margin: "16px 0",
 			}}>

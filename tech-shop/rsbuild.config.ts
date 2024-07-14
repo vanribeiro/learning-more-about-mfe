@@ -10,7 +10,7 @@ const moduleFederationConfig = {
   name: 'techshop',
   exposes:{
     './ListLastNewsTopics': './src/components/ListLastNewsTopics',
-    './Products': './src/pages/Products'
+    './Products': './src/pages/Products',
   },
   shared: {
    ...dependencies,

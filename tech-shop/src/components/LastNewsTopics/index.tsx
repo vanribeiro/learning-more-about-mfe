@@ -4,6 +4,7 @@ import { Box, Grid, Link } from "@mui/material";
 import INews from "../../interfaces/news";
 
 function LastNewsTopics({
+	index,
 	title,
 	url,
 	source,
@@ -14,6 +15,7 @@ function LastNewsTopics({
 			<Box sx={{ marginBottom: "16px" }}>
 				<Typography gutterBottom variant="body1" component="div">
 					<Link
+					    data-testid={`last-news-topics-${index}`}
 						sx={{
 							fontWeight: "bold",
 						}}

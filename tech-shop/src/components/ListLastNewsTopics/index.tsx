@@ -35,13 +35,13 @@ function ListLastNewsTopics() {
 					{list.map((item: INews, index) => {
 						return (
 							<LastNewsTopics
+								index={index}
 								key={`${index}`}
 								title={item?.title}
 								author={item?.author}
 								source={item.source}
 								publishedAt={item?.publishedAt}
 								url={item?.url}
-								data-testid={`last-news-topics-${index}`}
 							/>
 						);
 					})}

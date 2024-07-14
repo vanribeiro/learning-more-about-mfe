@@ -1,8 +1,6 @@
 import { defineConfig } from '@rsbuild/core';
 import { pluginReact } from '@rsbuild/plugin-react';
 import { ModuleFederationPlugin } from '@module-federation/enhanced/rspack';
-import { NativeFederationTypeScriptHost } from '@module-federation/native-federation-typescript/rspack';
-import { NativeFederationTestsHost } from '@module-federation/native-federation-tests/rspack';
 import { dependencies } from './package.json';
 
 const PORT: number = 3000;
@@ -46,12 +44,6 @@ export default defineConfig({
     rspack: ( config, { appendPlugins }) => {
       config.output!.uniqueName = 'home';
       appendPlugins ([
-        // NativeFederationTypeScriptHost({
-        //   moduleFederationConfig: moduleFederationConfig,
-        // }),
-        // NativeFederationTestsHost({
-        //   moduleFederationConfig: moduleFederationConfig,
-        // }),
         new ModuleFederationPlugin(moduleFederationConfig),
       ]);
     },

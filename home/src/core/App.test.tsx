@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
-describe.skip('App component', () => {
+describe('App component', () => {
     it('should render the provider component', () => {
         render(
             <BrowserRouter>

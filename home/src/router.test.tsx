@@ -1,42 +1,43 @@
 import { render, screen } from '@testing-library/react';
-import { BrowserRouter, MemoryRouter } from 'react-router-dom';
+import { MemoryRouter } from 'react-router-dom';
 import Router from './router';
 
 describe('Router', () => {
     it('should render home page when the path is "/"', () => {
         const route = '/';
         render(
+            <MemoryRouter initialEntries={[route]}>
                 <Router />
-            // <MemoryRouter initialEntries={[route]}>
-            // </MemoryRouter>
+            </MemoryRouter>
         );
 
         const pageTitle = screen.getByText('Shopping');
         expect(pageTitle).toBeInTheDocument();
     });
 
-    // it('should render tech shopping page when the path is "/tech-shopping"', () => {
-    //     const route = '/tech-shopping';
-    //     render(
-    //         <MemoryRouter initialEntries={[route]}>
-    //             <Router />
-    //         </MemoryRouter>
-    //     );
+    it('should render tech shopping page when the path is "/tech-shopping"', () => {
+        const route = '/tech-shopping';
+        render(
+            <MemoryRouter initialEntries={[route]}>
+                <Router />
+            </MemoryRouter>
+        );
 
-    //     const pageTitle = screen.getByText('Tech Shopping');
-    //     expect(pageTitle).toBeInTheDocument();
-    // });
+        const pageTitle = screen.getByRole('header').querySelector('h1')?.textContent;
+        expect(pageTitle).toBe('Tech Shopping');
+    });
 
-    // it('should render not found page when the path is not matched', () => {
-    //     const route = '/not-found';
+    it('should render not found page when the path is not matched', () => {
+        const route = '/not-found';
 
-    //     render(
-    //         <MemoryRouter initialEntries={[route]}>
-    //             <Router />
-    //         </MemoryRouter>
-    //     );
+        render(
+            <MemoryRouter initialEntries={[route]}>
+                <Router />
+            </MemoryRouter>
+        );
 
-    //     expect(screen.getByText('404')).toBeInTheDocument();
-    //     expect(screen.getByText('Page Not Found')).toBeInTheDocument();
-    // });
+        expect(screen.getByText('404')).toBeInTheDocument();
+        expect(screen.getByText('Page not found')).toBeInTheDocument();
+        expect(screen.getByText('Voltar para Home')).toBeInTheDocument();
+    });
 });
