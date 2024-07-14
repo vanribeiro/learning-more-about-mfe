@@ -1,0 +1,13 @@
+{
+  "name": "learning-more-about-mfe",
+  "version": "1.0.0",
+  "description": "e2e tests for learning-more-about-mfe",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Van Ribeiro",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.45.1",
+    "@types/node": "^20.14.10"
+  }
+}
