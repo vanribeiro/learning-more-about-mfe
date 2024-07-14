@@ -3,19 +3,27 @@
   "version": "1.0.0",
   "description": "A monorepo to learn more about micro front-ends",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
+  "workspaces": [
+    "e2e",
+    "home",
+    "tech-shop"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vanribeiro/learning-more-about-mfe.git"
   },
   "keywords": [
-    "React", "Front-end", 
+    "React",
+    "Front-end",
+    "Typescript",
+    "Monorepo",
     "Micro Front-end",
     "Module Federation",
-    "Jest", "React Testing Library",
-    "Playwright", "E2E"
+    "Jest",
+    "React Testing Library",
+    "Playwright",
+    "E2E"
   ],
   "author": "Van Ribeiro",
   "license": "MIT",

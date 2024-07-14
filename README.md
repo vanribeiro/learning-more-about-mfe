@@ -8,8 +8,9 @@ Learning about microfront-ends
 3. [Requirement](#requirement)
 4. [Technologies](#technologies)
 5. [Install](#install)
-6. [License](#license)
-7. [About Me](#about-me)
+6. [Tests](#tests)
+7. [License](#license)
+8. [About Me](#about-me)
 
 ## About
 Micro front-end, Unity Tests, Tests E2E
@@ -31,12 +32,28 @@ The main libs and packages which were used in this project:
 - [Jest](https://jestjs.io/) - [github](https://github.com/jestjs/jest)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - [github](https://github.com/testing-library/react-testing-library)
 - [MSW](https://mswjs.io/) - [github](https://github.com/mswjs/msw)
-- [wait-on](https://github.com/jeffbski/wait-on)
+- [Playwright] - [github](https://github.com/microsoft/playwright)
+- [wait-on](https://github.com/jeffbski/wait-on) - [github](https://github.com/jeffbski/wait-on)
 
 ## Install
 
 - [MFE Home](/home/README.md)
 - [Tech Shop](/tech-shop/README.md)
+
+## Tests
+
+### Unity tests, see
+
+- [MFE Home](/home/README.md)
+- [Tech Shop](/tech-shop/README.md)
+
+### E2E
+
+Inside `e2e/` folder, run 
+
+```bash
+npx playwright test
+```
 
 ## License
 

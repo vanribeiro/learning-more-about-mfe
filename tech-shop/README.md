@@ -48,6 +48,18 @@ Preview the production build locally:
 npm run preview
 ```
 
+Tests:
+
+```bash
+npm run test
+```
+
+Tests with coverage:
+
+```bash
+npm run test:coverage
+```
+
 ## License
 
 [MIT License 2024](./../LICENSE.md)
