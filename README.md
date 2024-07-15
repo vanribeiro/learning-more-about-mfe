@@ -33,7 +33,7 @@ The main libs and packages which were used in this project:
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - [github](https://github.com/testing-library/react-testing-library)
 - [MSW](https://mswjs.io/) - [github](https://github.com/mswjs/msw)
 - [Playwright] - [github](https://github.com/microsoft/playwright)
-- [wait-on](https://github.com/jeffbski/wait-on) - [github](https://github.com/jeffbski/wait-on)
+- [concurrently](https://www.npmjs.com/package/concurrently) - [github](https://github.com/open-cli-tools/concurrently#readme)
 
 ## Install
 
@@ -49,9 +49,16 @@ The main libs and packages which were used in this project:
 
 ### E2E
 
-Inside `e2e/` folder, run 
+In the root:
 
 ```bash
+npm start
+```
+
+After:
+
+```bash
+cd e2e/
 npx playwright test
 ```
 

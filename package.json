@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "A monorepo to learn more about micro front-ends",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "home": "npm run dev --workspace=home",
+    "techshop": "npm run dev --workspace=techshop",
+    "start": "concurrently \"npm run home\" \"npm run techshop\""
+  },
   "workspaces": [
     "home",
-    "tech-shop"
+    "techshop"
   ],
   "repository": {
     "type": "git",
