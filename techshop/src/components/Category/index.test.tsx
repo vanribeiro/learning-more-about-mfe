@@ -11,7 +11,7 @@ describe('Category Component', () => {
     };
 
     render(
-        <Category style={style}>
+        <Category id={1} style={style}>
             Category Name
         </Category>
     );

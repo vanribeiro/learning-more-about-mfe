@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { Grid, Typography } from "@mui/material";
 import { fetchData } from "../../service/api";
+import { RequestNews } from "../../types/request-news";
 import LastNewsTopics from "../LastNewsTopics";
 import INews from "../../interfaces/news";
 
-const fetchInit = {
+const fetchInit: RequestNews = {
 	search: "tech",
 	language: "pt",
 	pageSize: 6,

@@ -1,4 +1,3 @@
-import React from "react";
 import categories from "../../service/categories";
 import CategoryList from './../../components/CategoryList';
 

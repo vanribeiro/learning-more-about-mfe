@@ -1,4 +1,3 @@
-import React from "react";
 import Typography from "@mui/material/Typography";
 import { Box, Grid, Link } from "@mui/material";
 import INews from "../../interfaces/news";

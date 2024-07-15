@@ -1,13 +1,9 @@
 import React from "react";
 import { Container, Grid } from "@mui/material";
-import Category from '../Category'
-import ICategory from "../../interfaces/category";
+import Category from '../Category';
+import { ICategoryList } from "../../interfaces/category";
 
-interface Props{
-    list: Array<ICategory>;
-}
-
-const CategoryList = ({ list }: Props) => {
+const CategoryList = ({ list }: ICategoryList) => {
 
 	return (
 		<>

@@ -1,5 +1,5 @@
 interface INews {
-    index: number;
+    index?: number;
     title: string | null;
     urlToImage?: string;
     author?: string | null;

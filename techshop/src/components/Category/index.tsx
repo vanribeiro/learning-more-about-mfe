@@ -1,15 +1,8 @@
-import { ReactNode } from "react";
 import { Typography } from "@mui/material";
+import { ICategory } from "../../interfaces/category";
 import './index.css'
-import React from "react";
 
-interface Props{
-	id: number;
-    style?: any;
-    children: ReactNode
-}
-
-const Category = ({id, style, children}: Props) => {
+const Category = ({id, style, children}: ICategory) => {
 
 	return (
 		<>
