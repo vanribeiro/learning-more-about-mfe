@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 function Banner() {
 	return (
-		<Container maxWidth="xl" sx={{ position: 'relative', padding: '0px !important'}}>
-				<Link className="banner__link" to="/tech-shopping" title="Go to Tech Shopping">
+		<Container maxWidth="xl" data-testid="banner-home" sx={{ position: 'relative', padding: '0px !important'}}>
+				<Link data-testid="banner-link" className="banner__link" to="/tech-shopping" title="Go to Tech Shopping">
 					<img className="banner__image" src={setup} alt="computador desktop" />
 					<div className="banner__layer">
 						<div className="banner__text-container">
