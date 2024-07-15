@@ -37,6 +37,6 @@ export default {
 		],
 	},
 	moduleNameMapper: {
-		"\\.(css|less|scss|sass)$": "<rootDir>/node_modules/jest-css-modules-transform",
+		"\\.(css|less|scss|sass)$": "<rootDir>/src/tests/mocks/file-mock.js",
 	},
 };

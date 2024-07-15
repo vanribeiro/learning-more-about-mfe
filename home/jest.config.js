@@ -42,12 +42,10 @@ module.exports = {
 	moduleNameMapper: {
 		"\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$"
 			: "<rootDir>/src/tests/mocks/file-mock.js",
+		"\\.(css|less|scss|sass)$": "<rootDir>/src/tests/mocks/file-mock.js",
 		'techshop/ListLastNewsTopics': '<rootDir>/src/tests/mocks/ListLastNewsTopics.js',
 		'techshop/Products': '<rootDir>/src/tests/mocks/Products.js',
 		'techshop/api': '<rootDir>/src/tests/mocks/fetch-data.js',
-		"\\.(css|less|scss|sass)$"
-			: "<rootDir>/node_modules/jest-css-modules-transform"
-			,
 		"^@mf-types/(.*)$": "<rootDir>/@mf-types/$1",
 	},
 };

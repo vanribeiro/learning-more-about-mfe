@@ -13,11 +13,11 @@ Learning about microfront-ends
 8. [About Me](#about-me)
 
 ## About
-Micro front-end, Unity Tests, Tests E2E
+A monorepo with micro front-end, unity tests and E2E.
 
 ## Features
-1. [Home](/home/README.md) - share layout items page(Header, Footer, ...) with Tech-Shop MFE
-2. [Tech-Shop MFE](/tech-shop/README.md) - share a component which provides news from a RESTful API and product catalog page with home
+1. [Home](/home/README.md) - Homepage
+2. [Tech-Shop MFE](/tech-shop/README.md) - Simulate a shop window and share components which provides some Tech News from a RESTful API and simple product catalog listed by category.
 
 ## Requirement
 - Node >= v20.14.0 
@@ -33,12 +33,24 @@ The main libs and packages which were used in this project:
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - [github](https://github.com/testing-library/react-testing-library)
 - [MSW](https://mswjs.io/) - [github](https://github.com/mswjs/msw)
 - [Playwright](https://playwright.dev/) - [github](https://github.com/microsoft/playwright)
-- [concurrently](https://www.npmjs.com/package/concurrently) - [github](https://github.com/open-cli-tools/concurrently#readme)
+- [Concurrently](https://www.npmjs.com/package/concurrently) - [github](https://github.com/open-cli-tools/concurrently#readme)
+
 
 ## Install
 
-- [MFE Home](/home/README.md)
-- [Tech Shop](/tech-shop/README.md)
+```bash
+npm install
+```
+
+### API Key
+
+- Before start runnig the MFEs application, you need to get a KEY API and set in a `.env` in MFE Tech Shop. Read the [step by step here](/techshop/README.md#running-api).
+
+## Get Started
+
+```bash
+npm start
+```
 
 ## Tests
 
@@ -51,9 +63,7 @@ Each MFE application has its own test suites:
 
 ### Running E2E
 
-#### Running the application 
-
-1. In the root folder, run:
+1. In the root folder, run the application:
 
 ```bash
 npm start
@@ -62,8 +72,7 @@ npm start
 2. After:
 
 ```bash
-cd e2e/
-npx playwright test
+npm run e2e
 ```
 
 ## License

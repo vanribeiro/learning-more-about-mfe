@@ -6,7 +6,8 @@
   "scripts": {
     "home:dev": "npm run dev --workspace=home",
     "techshop:dev": "npm run dev --workspace=techshop",
-    "start": "concurrently \"npm run home:dev\" \"npm run techshop:dev\""
+    "start": "concurrently \"npm run home:dev\" \"npm run techshop:dev\"",
+    "e2e": "npm run test --workspace=e2e"
   },
   "workspaces": [
     "home",
