@@ -4,9 +4,9 @@
   "description": "A monorepo to learn more about micro front-ends",
   "main": "index.js",
   "scripts": {
-    "home": "npm run dev --workspace=home",
-    "techshop": "npm run dev --workspace=techshop",
-    "start": "concurrently \"npm run home\" \"npm run techshop\""
+    "home:dev": "npm run dev --workspace=home",
+    "techshop:dev": "npm run dev --workspace=techshop",
+    "start": "concurrently \"npm run home:dev\" \"npm run techshop:dev\""
   },
   "workspaces": [
     "home",

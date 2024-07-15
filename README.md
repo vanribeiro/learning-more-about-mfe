@@ -32,7 +32,7 @@ The main libs and packages which were used in this project:
 - [Jest](https://jestjs.io/) - [github](https://github.com/jestjs/jest)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - [github](https://github.com/testing-library/react-testing-library)
 - [MSW](https://mswjs.io/) - [github](https://github.com/mswjs/msw)
-- [Playwright] - [github](https://github.com/microsoft/playwright)
+- [Playwright](https://playwright.dev/) - [github](https://github.com/microsoft/playwright)
 - [concurrently](https://www.npmjs.com/package/concurrently) - [github](https://github.com/open-cli-tools/concurrently#readme)
 
 ## Install
@@ -42,20 +42,24 @@ The main libs and packages which were used in this project:
 
 ## Tests
 
-### Unity tests, see
+### Unity tests
+
+Each MFE application has its own test suites:
 
 - [MFE Home](/home/README.md)
 - [Tech Shop](/tech-shop/README.md)
 
-### E2E
+### Running E2E
 
-In the root:
+#### Running the application 
+
+1. In the root folder, run:
 
 ```bash
 npm start
 ```
 
-After:
+2. After:
 
 ```bash
 cd e2e/
