@@ -4,6 +4,7 @@
   "description": "e2e tests for learning-more-about-mfe",
   "main": "index.js",
   "scripts": {},
+  "type": "module",
   "author": "Van Ribeiro",
   "license": "MIT",
   "devDependencies": {
