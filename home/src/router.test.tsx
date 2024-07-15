@@ -23,7 +23,7 @@ describe('Router', () => {
             </MemoryRouter>
         );
 
-        const pageTitle = screen.getByRole('header').querySelector('h1')?.textContent;
+        const pageTitle = screen.getByTestId('header-tech-shopping').querySelector('h1')?.textContent;
         expect(pageTitle).toBe('Tech Shopping');
     });
 
