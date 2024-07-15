@@ -2,7 +2,6 @@
   "name": "learning-more-about-mfe",
   "version": "1.0.0",
   "description": "A monorepo to learn more about micro front-ends",
-  "main": "index.js",
   "scripts": {
     "home:dev": "npm run dev --workspace=home",
     "techshop:dev": "npm run dev --workspace=techshop",
