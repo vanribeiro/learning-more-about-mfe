@@ -34,7 +34,7 @@ This project uses the [News API](https://newsapi.org/) and it needs an api Key. 
 Start the dev server:
 
 ```bash
-npm run dev
+npm run dev:open
 ```
 
 Build the app for production:
