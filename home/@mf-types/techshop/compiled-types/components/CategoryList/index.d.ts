@@ -1,6 +1,3 @@
-import ICategory from "../../interfaces/category";
-interface Props {
-    list: Array<ICategory>;
-}
-declare const CategoryList: ({ list }: Props) => import("react/jsx-runtime").JSX.Element;
+import { ICategoryList } from "../../interfaces/category";
+declare const CategoryList: ({ list }: ICategoryList) => import("react/jsx-runtime").JSX.Element;
 export default CategoryList;

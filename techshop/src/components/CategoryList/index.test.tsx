@@ -1,10 +1,9 @@
-import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import CategoryList from '.';
-import ICategory from '../../interfaces/category';
+import { ICategory } from '../../interfaces/category';
 
 describe('CategoryList Component', () => {
-  const mockCategories: ICategory[] = [
+  const mockCategories: Array<ICategory> = [
     { id: 1, name: 'Category 1', style: { color: 'red', backgroundColor: 'white'} },
     { id: 2, name: 'Category 2', style: { color: 'blue', backgroundColor: 'transparent' } },
     { id: 3, name: 'Category 3', style: { color: 'green', backgroundColor: 'black' } },
@@ -23,7 +22,7 @@ describe('CategoryList Component', () => {
   it('should renders category names correctly', () => {
     render(<CategoryList list={mockCategories} />);
     mockCategories.forEach(category => {
-      expect(screen.getByText(category.name)).toBeInTheDocument();
+      expect(screen.getByText(category?.name)).toBeInTheDocument();
     });
   });
 

@@ -1,7 +1,7 @@
-interface IFetchNews {
+type RequestNews = {
     search: string;
     language: string;
     pageSize: number;
     sortBy: string;
-}
-export type { IFetchNews };
+};
+export type { RequestNews };

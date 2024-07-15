@@ -44,21 +44,21 @@ describe('ListLastNewsTopics component', () => {
       await waitFor(() => {
         const techNews = screen.queryByText('Tech News');
         expect(techNews).toBeInTheDocument();
+        expect(screen.getByTestId('list-last-news-topics')).toBeInTheDocument();
+        expect(screen.getByText('News 1')).toBeInTheDocument();
+        expect(screen.getByText('News 2')).toBeInTheDocument();
+        expect(screen.getByText('31/01/2022 - Source 1')).toBeInTheDocument();
+        expect(screen.getByText('01/02/2022 - Source 2')).toBeInTheDocument();
+        expect(screen.getByTestId('last-news-topics-0')).toHaveAttribute(
+          'href',
+          'https://example.com/news1'
+        );
+        expect(screen.getByTestId('last-news-topics-1')).toHaveAttribute(
+          'href',
+          'https://example.com/news2'
+        );
       });
     
-      expect(screen.getByTestId('list-last-news-topics')).toBeInTheDocument();
-      expect(screen.getByText('News 1')).toBeInTheDocument();
-      expect(screen.getByText('News 2')).toBeInTheDocument();
-      expect(screen.getByText('31/01/2022 - Source 1')).toBeInTheDocument();
-      expect(screen.getByText('01/02/2022 - Source 2')).toBeInTheDocument();
-      expect(screen.getByTestId('last-news-topics-0')).toHaveAttribute(
-        'href',
-        'https://example.com/news1'
-      );
-      expect(screen.getByTestId('last-news-topics-1')).toHaveAttribute(
-        'href',
-        'https://example.com/news2'
-      );
     });
 
 });

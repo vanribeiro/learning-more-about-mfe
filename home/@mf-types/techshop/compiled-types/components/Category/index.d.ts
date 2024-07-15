@@ -1,9 +1,4 @@
-import { ReactNode } from "react";
+import { ICategory } from "../../interfaces/category";
 import './index.css';
-interface Props {
-    id: number;
-    style?: any;
-    children: ReactNode;
-}
-declare const Category: ({ id, style, children }: Props) => import("react/jsx-runtime").JSX.Element;
+declare const Category: ({ id, style, children }: ICategory) => import("react/jsx-runtime").JSX.Element;
 export default Category;

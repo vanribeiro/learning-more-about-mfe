@@ -15,12 +15,16 @@ const Home = () => {
         <List>
             <ListItem>
                 <Link to="/tech-shopping">
+                  <Typography variant='body2'>
                     Tech Shopping
+                  </Typography>
                 </Link>
             </ListItem>
             <ListItem>
                 <Link to="/list-last-news-topics">
+                  <Typography variant='body2'>
                     List Last News - Topics
+                  </Typography>
                 </Link>
             </ListItem>
         </List>
