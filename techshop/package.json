@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "rsbuild dev --open",
-    "dev:headless": "rsbuild dev",
+    "dev:open": "rsbuild dev --open",
     "build": "rsbuild build",
     "preview": "rsbuild preview",
     "test": "jest --coverage=false",
