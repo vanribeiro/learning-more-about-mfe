@@ -33,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/vanribeiro/learning-more-about-mfe/issues"
   },
-  "homepage": "https://github.com/vanribeiro/learning-more-about-mfe#readme"
+  "homepage": "https://github.com/vanribeiro/learning-more-about-mfe#readme",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
 }
